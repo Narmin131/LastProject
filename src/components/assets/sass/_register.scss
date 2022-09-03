@@ -1,0 +1,81 @@
+.register {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 110px;
+    background-color: #F0F0F0;
+    background-image: url('../img/bg8.jpg');
+    .register-main {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        h2 {
+            text-align: center;
+            font-weight: 800;
+            padding: 20px 0 0 0;
+            font-size: 33px;
+            margin-bottom: 22px;
+        }
+
+        .form {
+            width: 100%;
+            background-color: #fcfbfb;
+            height: 100%;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 20px;
+            border-radius: 20px;
+            input {
+                width: 80%;
+                height: 79px;
+                border: 2px solid #9fa1a3;
+                border-radius: 50px;
+                font-size: 16px;
+                line-height: 80px;
+                font-weight: 500;
+                padding: 0 53px;
+                outline: none;
+                margin-bottom: 20px;
+                color: #8799a3;
+            }
+
+            .bottom {
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                button {
+                    width: 170px;
+                    height: 60px;
+                    background:#61A303;
+                    line-height: 62px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    padding: 0 10px;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+
+                }
+                p{
+                    display: flex;
+                    margin: 0;
+                    a{
+                       margin-left: 10px;
+                       text-decoration: none;
+                       color: #073f0d;
+                       font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+}

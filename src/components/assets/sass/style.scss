@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'nav';
+@import "footer";
+@import "home";
+@import "about";
+@import "contact";
+@import "register";
+@import "shop";
+@import "blog";
+@import "cart";
+body{
+    font-family: 'League Spartan', sans-serif !important;
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img/banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-weight: bold;
+        font-size: 70px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        i{
+            margin: 0 22px;
+            font-size: 15px;
+        }
+        a{
+            color: #000 !important;
+            text-decoration: none;
+            transition: color .5s ease;
+            i{
+                width: 38px;
+                height: 38px;
+                background: #62A403;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                line-height: 38px;
+                margin-right: 9px;
+                
+            }
+            &:hover{
+                color: #62A403 !important;
+            }
+        }
+    }
+
+}
+
+.light{
+    --color:#000;
+    --bg: #F6FBF4;
+    --logo:url(../../assets/img/logo-d.png);
+    --i:#E2E4E3;
+    --nav:#fff;
+    --header:#F6FBF4;
+    --input:#2e2e2e;
+    --icon:red;
+    
+}
+
+.dark{
+    --color:#fff;
+    --bg:#2f353d;
+    --logo:url(../../assets/img/logo-w.png);--i:#262626;
+    --nav:#1D2127;
+    --header:#2f353d;
+    --input:#2f353d;
+    --icon:#fff;
+}

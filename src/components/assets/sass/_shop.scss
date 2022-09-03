@@ -1,0 +1,133 @@
+.shopsec1 {
+    width: 100%;
+    height: 110vh;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: var(--nav);
+    .shop-main {
+        width: 80%;
+        height: 90%;
+        background-image: url("../img/bg1.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            color: #00b706;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 900;
+            font-size: 50px;
+        }
+
+        button {
+            font-family: 'Spartan', sans-serif;
+            height: 55px;
+            background: #035f22;
+            border-radius: 50px;
+            padding: 0 41px;
+            font-size: 17px;
+            color: #fff;
+            border-color: transparent;
+            font-weight: 800;
+        }
+    }
+}
+
+.shop-products {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    
+   background-color: var(--nav);
+h1{
+            text-align: center;
+            font-weight: 900;
+            font-size: 50px;
+            color: var(--color);
+}
+    .shop-item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 2px solid #e6e6e6;
+        border-radius: 20px;
+        padding: 23px;
+        position: relative;
+
+        .item-img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 260px;
+            }
+        }
+
+        .item-info {
+            padding-left: 20px;
+            p{
+                color: #5e5e5e;
+                font-size: 20px;
+                margin: 0;
+                i{
+                    color: #00b706;
+                    font-size: 9px;
+                    margin-right: 7px;
+                    width: 15px;
+                    height: 15px;
+                    text-align: center;
+                    line-height: 15px;
+                    border-radius: 50%;
+                    border: 1px solid #00b706;
+                }
+            }
+            h4{
+                font-weight: 700;
+                color: var(--color);
+                span{
+                    color: red;
+
+                }
+            }
+            h3{
+                font-weight: bold;
+           color: var(--color);
+        }
+        }
+
+        .line {
+            position: absolute;
+            top: 0;
+            background-color: #e6e6e6;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+        }
+
+        button {
+            color: #FFF;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 900;
+            background-color: #00b706;
+            border-radius: 30px;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+        }
+    }
+}

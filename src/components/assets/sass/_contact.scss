@@ -1,0 +1,93 @@
+.contactsec1 {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 50px 0;
+    background-color: var(--nav);
+   .overlay{
+    width: 92%;
+    margin: 0 auto;
+    height: 100%;
+    .contact-main {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 13px;
+        background-color: #E4E4E4;
+        padding: 80px 40px;
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 400px;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        .inputs {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            input {
+                display: block;
+                width: 100%;
+                height: 79px;
+                background: #fff;
+                border: none;
+                border: 2px solid #eceef2;
+                border-radius: 50px;
+                font-size: 16px;
+                line-height: 80px;
+                font-weight: 500;
+                padding: 0 53px;
+                outline: none;
+                margin-bottom: 20px;
+                color: #8799a3;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .text-area {
+            height: 100%;
+            width: 100%;
+            textarea {
+                resize: none;
+                outline: none;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                padding: 20px 40px;
+                border: none;
+                border: 2px solid #eceef2;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #8799a3;
+            }
+        }
+
+        .touch {
+            height: 65px;
+            width: 100%;
+            color: #fff;
+            border-radius: 50px;
+            padding: 0 20px;
+            border: none;
+            background: #62A403;
+            padding: 0 32px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 800;
+            line-height: 69px;
+        }
+    }
+   }
+}
