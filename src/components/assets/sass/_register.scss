@@ -5,10 +5,12 @@
     padding: 110px;
     background-color: #F0F0F0;
     background-image: url('../img/bg8.jpg');
+
     .register-main {
         width: 70%;
         height: 100%;
         margin: auto;
+
         h2 {
             text-align: center;
             font-weight: 800;
@@ -28,6 +30,7 @@
             flex-direction: column;
             padding: 40px 20px;
             border-radius: 20px;
+
             input {
                 width: 80%;
                 height: 79px;
@@ -49,10 +52,11 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+
                 button {
                     width: 170px;
                     height: 60px;
-                    background:#61A303;
+                    background: #61A303;
                     line-height: 62px;
                     font-size: 14px;
                     text-transform: uppercase;
@@ -65,14 +69,16 @@
                     border: none;
 
                 }
-                p{
+
+                p {
                     display: flex;
                     margin: 0;
-                    a{
-                       margin-left: 10px;
-                       text-decoration: none;
-                       color: #073f0d;
-                       font-weight: bold !important;
+
+                    a {
+                        margin-left: 10px;
+                        text-decoration: none;
+                        color: #073f0d;
+                        font-weight: bold !important;
                     }
                 }
             }
