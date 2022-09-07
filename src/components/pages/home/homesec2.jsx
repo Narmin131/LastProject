@@ -14,11 +14,9 @@ const homesec2 = () => {
         items: 3,
         navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
         smartSpeed: 1000,
-        autoplay: true,
         autoplayTimeout: 3000,
         loop: true,
         dots: false,
-        responsiveClass: true,
         responsive: {
             0: {
                 items: 1,

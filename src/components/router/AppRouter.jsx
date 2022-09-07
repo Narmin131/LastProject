@@ -10,7 +10,6 @@ import Cart from '../pages/Cart'
 import Signin from "../pages/Signin"
 import Blogs from '../pages/Blogs'
 import Shop from '../pages/Shop'
-import Admin from '../pages/Admin'
 import { CartProvider } from "react-use-cart";
 
 const AppRouter = () => {

@@ -1,5 +1,8 @@
 import React from 'react'
-const slider = () => {
+import { useTranslation } from 'react-i18next'
+
+const Slider = () => {
+    const { t } = useTranslation();
     return (
         <div className="slider">
             <div className="slider-main">
@@ -7,14 +10,14 @@ const slider = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 d-flex justify-content-center">
-                                <p>100% Natural Foods</p>
+                                <p>{t('hero.0')}</p>
 
                             </div>
                             <div className='col-lg-12 d-flex justify-content-center'>
-                                <h3>Organic Veggies & Foods</h3>
+                                <h3>{t('hero.1')}</h3>
                             </div>
                             <div className="col-lg-12 d-flex justify-content-center">
-                                <h3>You Cook <span>Healty</span></h3>
+                                <h3>{t('hero.2')} <span>{t('hero.3')}</span></h3>
                             </div>
                         </div>
                     </div>
@@ -24,4 +27,4 @@ const slider = () => {
     )
 }
 
-export default slider
+export default Slider

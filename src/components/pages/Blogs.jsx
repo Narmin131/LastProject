@@ -20,7 +20,7 @@ const Blogs = () => {
               blogData.data.map((blog, index) => (
                 <div className="col-lg-6 p-4 " data-aos="zoom-in-up">
                   <div className="blog">
-                    <img src={blog.img} />
+                    <img src={blog.img} alt='' />
                     <h2>{blog.title}</h2>
                     <p>{blog.desc}</p>
                   </div>

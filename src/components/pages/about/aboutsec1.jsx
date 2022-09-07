@@ -8,7 +8,7 @@ const aboutsec1 = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="left-img2">
-              <img src={img} />
+              <img src={img} alt=''/>
             </div>
           </div>
           <div className="col-lg-6">

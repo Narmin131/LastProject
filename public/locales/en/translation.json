@@ -1,5 +1,48 @@
 {
-    "nav":{
-      "0":"Welcome to our Organic store Organia!"
-    }
+  "nav": {
+    "0": "Welcome to our Organic store Organia!",
+    "1": "65 Products Search. Hit enter...",
+    "2": "Select a categories",
+    "3": "All Categories",
+    "4": "Home+",
+    "5": "About+",
+    "6": "Shop+",
+    "7": "Blogs+",
+    "8": "Contact+",
+    "9": "24/7 Support"
+  },
+  "hero": {
+    "0": "100% Natural Foods",
+    "1": "Organic Veggies & Foods",
+    "2": "You Cook",
+    "3": "Healty"
+  },
+  "home1": {
+    "0": "BLACK FRIDAY OFFER",
+    "1": "Organic Orange",
+    "2": "Juice",
+    "3": "40% Flat",
+    "4": "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle",
+    "5": "Shop Now"
+  },
+  "footer": {
+    "0": "Email",
+    "1": "needhelp@Organia.com ",
+    "2": "Phone",
+    "3": "666 888 888",
+    "4": "Address",
+    "5": "88 road, borklyn street, USA",
+    "6": "There are many variations of passages of lorem ipsum available.",
+    "7": "CUSTOMER SERVICE",
+    "8": "Contact Us",
+    "9": "Returns Policy",
+    "10": "Loyalty Program",
+    "11": "Warranty & Repair",
+    "12": "Shopping Cart",
+    "13": "Track Your Order",
+    "14": "Delivery Information",
+    "15": "Help & Faq",
+    "16": "My Account",
+    "17": "Copyright 2021 by Themewar.com"
+  }
 }

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Theme from './Theme';
 import Lang from './Lang';
 import { useTranslation } from 'react-i18next'
 
 const Nav = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <nav>
@@ -31,8 +31,8 @@ const Nav = () => {
 
             <div className="col-lg-6 pt-4 pb-4">
               <div className="search">
-                <input type="text" placeholder="65 Products Search. Hit enter..." />
-                <button>Select a categories <i class="fa-solid fa-chevron-down"></i></button>
+                <input type="text" placeholder={t('nav.1')} />
+                <button>{t('nav.2')}<i class="fa-solid fa-chevron-down"></i></button>
               </div>
             </div>
 
@@ -54,23 +54,23 @@ const Nav = () => {
           <div className="row h-100">
             <div className="col-lg-3 p-0 h-100">
               <div className="category">
-                <h2><i class="fa-solid fa-bars"></i>All Categories</h2>
+                <h2><i class="fa-solid fa-bars"></i>{t('nav.3')}</h2>
               </div>
             </div>
             <div className="col-lg-6 h-100">
               <ul className='links'>
-                <li><NavLink to='/' >Home+</NavLink></li>
-                <li><NavLink to='/about' >About+</NavLink></li>
-                <li><NavLink to='/shop' >Shop+</NavLink></li>
-                <li><NavLink to='/blogs' >Blogs+</NavLink></li>
-                <li><NavLink to='/contact' >Contact+</NavLink></li>
+                <li><NavLink to='/' >{t('nav.4')}</NavLink></li>
+                <li><NavLink to='/about' >{t('nav.5')}</NavLink></li>
+                <li><NavLink to='/shop' >{t('nav.6')}</NavLink></li>
+                <li><NavLink to='/blogs' >{t('nav.7')}</NavLink></li>
+                <li><NavLink to='/contact' >{t('nav.8')}</NavLink></li>
               </ul>
             </div>
             <div className="col-lg-3">
               <div className="contact">
                 <div className="txt">
                   <h4>+90 157 058 4567</h4>
-                  <h6>24/7 Support</h6>
+                  <h6>{t('nav.9')}</h6>
                 </div>
                 <i class="fa-solid fa-headphones-simple"></i>
               </div>

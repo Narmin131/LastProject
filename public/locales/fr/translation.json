@@ -1,5 +1,48 @@
 {
-    "nav":{
-      "0":"Bienvenue dans notre magasin Bio Organia !"
-    }
+  "nav": {
+    "0": "Bienvenue dans notre magasin Bio Organia !",
+    "1": "65 Recherche produits. Appuyez Entrée...",
+    "2": "Sélectionnez  catégorie",
+    "3": "Toutes catégories",
+    "4": "Maison+",
+    "5": "À propos de+",
+    "6": "Boutique+",
+    "7": "Blogues+",
+    "8": "Contact+",
+    "9": "24/7 Soutien"
+  },
+  "hero": {
+    "0": "Aliments 100% naturels",
+    "1": "Légumes et aliments biologiques",
+    "2": "Vous cuisinez",
+    "3": "Santé"
+  },
+  "home1": {
+    "0": "OFFRE BLACK FRIDAY",
+    "1": "Orange bio",
+    "2": "Jus",
+    "3": "40 % Plat",
+    "4": "Apparemment, nous avions atteint une grande hauteur dans l'atmosphère, car le ciel était d'un noir absolu et les étoiles avaient cessé de scintiller.",
+    "5": "Achetez maintenant"
+  },
+  "footer": {
+    "0": "E-mail",
+    "1": "needhelp@Organia.com ",
+    "2": "Téléphoner",
+    "3": "666 888 888",
+    "4": "Adresse",
+    "5": "88 route, rue Borklyn, États-Unis",
+    "6": "Il existe de nombreuses variantes de passages de lorem ipsum disponibles.",
+    "7": "SERVICE CLIENTS",
+    "8": "Nous contacter",
+    "9": "Politique de retour",
+    "10": "Programme de fidélité",
+    "11": "Garantie et réparation",
+    "12": "Panier",
+    "13": "Suivre votre commande",
+    "14": "Informations de livraison",
+    "15": "Aide et FAQ",
+    "16": "Mon compte",
+    "17": "Copyright 2021 par Themewar.com"
+  }
 }

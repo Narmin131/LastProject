@@ -7,7 +7,7 @@ const ProductItem = (props) => {
             <div className="box" key={props.id}
             >
                 <div className="box-img">
-                    <img src={props.img} />
+                    <img src={props.img} alt=''/>
                     <span>Fresh</span>
                 </div>
                 <div className="box-content">

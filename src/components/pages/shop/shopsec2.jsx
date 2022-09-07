@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProductItem2 from "../common/ProductItem2";
 import shopData from "../../data/data3";
 

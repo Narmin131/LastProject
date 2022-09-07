@@ -4,7 +4,7 @@ import "../common/i18"
 
 const Lang = () => {
 
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const handleClick = (lang) => {
         i18n.changeLanguage(lang);
     }

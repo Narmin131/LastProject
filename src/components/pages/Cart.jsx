@@ -1,18 +1,13 @@
 import React from "react";
 import Banner from "./common/Banner";
-import img6 from "../assets/img/vegetable.png";
 import { useCart } from "react-use-cart";
 
 const Cart = () => {
   const {
     isEmpty,
-    cartTotal,
-    // totalUniqueItems,
-    totalItems,
     items,
     removeItem,
     updateItemQuantity,
-    // emptyCart,
   } = useCart();
   return (
     <>
@@ -60,7 +55,7 @@ const Cart = () => {
                                 ></i>
                               </td>
                               <td>
-                                <img src={item.img} />
+                                <img src={item.img} alt='' />
                               </td>
                               <td>
                                 <p>{item.title}</p>

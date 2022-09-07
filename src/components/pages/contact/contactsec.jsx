@@ -6,7 +6,7 @@ const contactsec = () => {
     <div className="contactsec1">
       <div className="overlay">
         <div className="contact-main">
-          <img src={leaf} />
+          <img src={leaf} alt=''/>
           <div className="container h-100">
             <div className="row h-100">
               <div className="col-lg-12 d-flex justify-content-center mb-3">
