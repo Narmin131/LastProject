@@ -44,5 +44,33 @@
     "15": "Aide et FAQ",
     "16": "Mon compte",
     "17": "Copyright 2021 par Themewar.com"
+  },
+  "about": {
+    "0": "À propos de"
+  },
+  "shop": {
+    "0": "Boutique",
+    "1": "Uniquement naturel",
+    "2": "Natural, Raw & Organic",
+    "3": "Naturel, cru et biologique",
+    "4": "33% de réduction"
+  },
+  "blogs": {
+    "0": "Blogue et actualités"
+  },
+  "contact": {
+    "0": "Contact ",
+    "1": "ÉCRIVEZ-NOUS",
+    "2": "Nom et prénom",
+    "3": "Votre e-mail",
+    "4": "Matière",
+    "5": "Votre message ici",
+    "6": "Entrer en contact"
+  },
+  "register": {
+    "0": "Mon compte"
+  },
+  "cart": {
+    "0": "Chariot "
   }
 }

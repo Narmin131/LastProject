@@ -1,10 +1,13 @@
 import React from 'react'
 import Banner from './common/Banner'
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 const Signin = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-    <Banner title="My Account"/>
+    <Banner title={t('register.0')}/>
      <div className="register">
       <div className="register-main">
         <div className="container">

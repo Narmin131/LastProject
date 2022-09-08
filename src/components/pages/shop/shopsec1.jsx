@@ -1,5 +1,7 @@
 import React from "react";
-const shopsec1 = () => {
+import { useTranslation } from "react-i18next";
+const Shopsec1 = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="shopsec1">
@@ -7,15 +9,15 @@ const shopsec1 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 d-flex justify-content-center">
-                <p>Only Natural</p>
+                <p>{t('shop.1')}</p>
               </div>
               <div className="col-lg-12 d-flex justify-content-center">
                 <h2>
-                  Natural, Raw & Organic <br /> Protein Powders
+                {t('shop.2')} <br /> {t('shop.3')}
                 </h2>
               </div>
               <div className="col-lg-12 d-flex justify-content-center">
-                <button>33% Discount</button>
+                <button>{t('shop.4')}</button>
               </div>
             </div>
           </div>
@@ -25,4 +27,4 @@ const shopsec1 = () => {
   );
 };
 
-export default shopsec1;
+export default Shopsec1;

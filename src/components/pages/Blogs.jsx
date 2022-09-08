@@ -3,16 +3,17 @@ import Banner from './common/Banner'
 import blogData from '../data/blogData'
 import AOS from 'aos';
 import "aos/dist/aos.css"
+import { useTranslation } from 'react-i18next'
 
 const Blogs = () => {
-
+  const { t } = useTranslation();
   useEffect(()=>{
     AOS.init({duration:1000})
   },[])
 
   return (
     <>
-      <Banner title='Blog & News' />
+      <Banner title={t('blogs.0')} />
       <div className="blogs">
         <div className="container d-flex justify-content-center align-items-center">
           <div className="row ">

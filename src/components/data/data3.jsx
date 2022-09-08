@@ -11,7 +11,7 @@ const shopData = {
         {
             id:1,
             img:img1,
-            title:'Vegan Fresh Tomato',
+            title:'about.0',
             price:87,
         },
         {

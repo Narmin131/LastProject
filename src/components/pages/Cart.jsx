@@ -1,8 +1,9 @@
 import React from "react";
 import Banner from "./common/Banner";
 import { useCart } from "react-use-cart";
-
+import { useTranslation } from 'react-i18next'
 const Cart = () => {
+  const { t } = useTranslation();
   const {
     isEmpty,
     items,
@@ -11,7 +12,7 @@ const Cart = () => {
   } = useCart();
   return (
     <>
-      <Banner title="Cart" />
+      <Banner title={t('cart.0')}  />
       {isEmpty ? (
         <div className="cart d-flex justify-content-center">
           <h3>No data</h3>

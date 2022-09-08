@@ -44,5 +44,33 @@
     "15": "Help & Faq",
     "16": "My Account",
     "17": "Copyright 2021 by Themewar.com"
+  },
+  "about": {
+    "0": "About"
+  },
+  "shop": {
+    "0": "Shop",
+    "1": "Only Natural",
+    "2": "Natural, Raw & Organic",
+    "3": "Protein Powders",
+    "4": "33% Discount"
+  },
+  "blogs": {
+    "0": "Blog & News"
+  },
+  "contact": {
+    "0": "Contact ",
+    "1": "DROP US A LINE",
+    "2": "Full Name",
+    "3": "Your Email",
+    "4": "Subject",
+    "5":"Your Message Here",
+    "6":"Get in touch"
+  },
+  "register": {
+    "0": "My Account"
+  },
+  "cart": {
+    "0": "Contact "
   }
 }
