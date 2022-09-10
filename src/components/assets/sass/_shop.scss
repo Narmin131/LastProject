@@ -136,6 +136,11 @@
             padding: 10px 20px;
             border: none;
             margin-top: 10px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: #035f22;
+            }
         }
+        
     }
 }

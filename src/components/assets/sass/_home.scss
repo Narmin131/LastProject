@@ -328,6 +328,10 @@
             border-radius: 30px;
             border: none;
             padding: 10px 17px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: #62A403;
+            }
            }
            }
 

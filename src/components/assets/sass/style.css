@@ -937,6 +937,12 @@ footer .footer-main .last h5 {
   border-radius: 30px;
   border: none;
   padding: 10px 17px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.homesec2 .carousel-main2 .carousel .box .box-content button:hover {
+  background-color: #62A403;
 }
 
 @-webkit-keyframes right {
@@ -1602,6 +1608,12 @@ footer .footer-main .last h5 {
   padding: 10px 20px;
   border: none;
   margin-top: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.shop-products .shop-item button:hover {
+  background-color: #035f22;
 }
 
 .blogs {
