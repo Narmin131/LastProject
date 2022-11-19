@@ -65,23 +65,27 @@
         align-items: center;
         border: 2px solid #e6e6e6;
         border-radius: 20px;
-        padding: 23px;
         position: relative;
+        padding: 20px 9px;
 
         .item-img {
-            width: 50%;
+            width: 40%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
 
             img {
-                width: 260px;
+                width: 100%;
             }
         }
 
         .item-info {
             padding-left: 20px;
+            width: 60%;
+            height: 100%;
+
 
             p {
                 color: #5e5e5e;
@@ -117,31 +121,23 @@
             }
         }
 
-        .line {
-            position: absolute;
-            top: 0;
-            background-color: #e6e6e6;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-        }
+       
 
-        button {
-            color: #FFF;
-            font-size: 13px;
-            text-transform: uppercase;
-            font-weight: 900;
-            background-color: #00b706;
-            border-radius: 30px;
-            padding: 10px 20px;
+        .button {
+            font-weight: 600;
             border: none;
-            margin-top: 10px;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 background-color: #035f22;
             }
         }
-        
+
+        .btn2 {
+            font-weight: 600;
+
+        }
+
     }
 }
 

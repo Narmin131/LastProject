@@ -2,7 +2,7 @@ import React from "react";
 import ProductItem2 from "../common/ProductItem2";
 import shopData from "../../data/data3";
 
-const Shopsec2 = (props) => {
+const Shopsec2 = () => {
   return (
     <div className="shop-products">
       <div className="container">
@@ -17,7 +17,7 @@ const Shopsec2 = (props) => {
                 title={item.title}
                 img={item.img}
                 price={item.price}
-                product1={item}
+                product={item}
               />
             );
           })}

@@ -17,7 +17,7 @@ const ProductItem = (props) => {
         <button
           onClick={() => {
             addItem(props.product);
-            toast('yes')
+            toast.success('Product was added successfully')
           }}
         >
           Add to card

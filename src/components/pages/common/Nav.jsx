@@ -38,8 +38,8 @@ const Nav = () => {
 
             <div className="col-lg-2 pt-4 pb-4 px-0">
               <div className="login">
-                <NavLink to='/register'><i class="fa-solid fa-user"></i></NavLink>
-                <i class="fa-solid fa-heart"></i>
+                <NavLink to='/login'><i class="fa-solid fa-user"></i></NavLink>
+                 <NavLink to='/wishlist'><i class="fa-solid fa-heart"></i></NavLink>
                 <NavLink to='/cart'> <i class="fa-solid fa-basket-shopping"></i></NavLink>
               </div>
             </div>

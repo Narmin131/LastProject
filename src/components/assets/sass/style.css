@@ -1528,12 +1528,13 @@ footer .footer-main .last h5 {
           align-items: center;
   border: 2px solid #e6e6e6;
   border-radius: 20px;
-  padding: 23px;
   position: relative;
+  padding: 20px 9px;
 }
 
 .shop-products .shop-item .item-img {
-  width: 50%;
+  width: 40%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1550,11 +1551,13 @@ footer .footer-main .last h5 {
 }
 
 .shop-products .shop-item .item-img img {
-  width: 260px;
+  width: 100%;
 }
 
 .shop-products .shop-item .item-info {
   padding-left: 20px;
+  width: 60%;
+  height: 100%;
 }
 
 .shop-products .shop-item .item-info p {
@@ -1589,31 +1592,19 @@ footer .footer-main .last h5 {
   color: var(--color);
 }
 
-.shop-products .shop-item .line {
-  position: absolute;
-  top: 0;
-  background-color: #e6e6e6;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-}
-
-.shop-products .shop-item button {
-  color: #FFF;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 900;
-  background-color: #00b706;
-  border-radius: 30px;
-  padding: 10px 20px;
+.shop-products .shop-item .button {
+  font-weight: 600;
   border: none;
-  margin-top: 10px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.shop-products .shop-item button:hover {
+.shop-products .shop-item .button:hover {
   background-color: #035f22;
+}
+
+.shop-products .shop-item .btn2 {
+  font-weight: 600;
 }
 
 .blogs {

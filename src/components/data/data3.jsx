@@ -11,7 +11,7 @@ const shopData = {
         {
             id:1,
             img:img1,
-            title:'about.0',
+            title:'Fresh Vegetable',
             price:87,
         },
         {
