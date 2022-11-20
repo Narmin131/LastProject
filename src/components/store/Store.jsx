@@ -1,11 +1,9 @@
-import Wishlist from "./reducer/AppReducer";
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, createStore} from "redux";
+import wishlist from "../store/reducer/AppReducer"
 
-const store = configureStore({
-   reducer : {
-    Wishlist
-   }
-})
-
-
-export default store
+const store = createStore(
+    combineReducers({
+      wishlist
+    })
+)
+export default store;

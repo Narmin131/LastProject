@@ -1,8 +1,8 @@
-const SelectedWishList = localStorage.getItem("Wishlist")
+const selectedWishList = localStorage.getItem("Wishlist")
   ? JSON.parse(localStorage.getItem("Wishlist"))
   : [];
 
-const wishlist = (state = SelectedWishList, action) => {
+const wishlist = (state = selectedWishList, action) => {
   switch (action.type) {
     case "ADD_WISHLIST":
       return (state = [...state, action.payload]);

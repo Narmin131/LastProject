@@ -1,8 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProductItem2 from "../common/ProductItem2";
 import shopData from "../../data/data3";
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 const Shopsec2 = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1000})
+  },[])
+
   return (
     <div className="shop-products">
       <div className="container">
@@ -13,12 +20,15 @@ const Shopsec2 = () => {
 
           {shopData.shop.map((item, index) => {
             return (
-              <ProductItem2
+             <div className="col-lg-6 p-4" data-aos="flip-up"
+             data-aos-duration="1000">
+               <ProductItem2
                 title={item.title}
                 img={item.img}
                 price={item.price}
                 product={item}
               />
+             </div>
             );
           })}
         </div>

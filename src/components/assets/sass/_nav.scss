@@ -249,6 +249,25 @@ header {
     padding: 1px 0;
 }
 
+.wishlistLength{
+    position: relative;
+    span{
+       position:absolute;
+       top: -12px;
+       right: -10px;
+       width: 10px;
+       height: 10px;
+       background-color: #218716;
+       color: #fff;
+       padding:12px;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       border-radius: 25px;
+    }
+}
 
 
 @media (min-width: 576px) {}

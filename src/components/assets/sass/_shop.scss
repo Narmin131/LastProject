@@ -58,89 +58,90 @@
         color: var(--color);
     }
 
-    .shop-item {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        border: 2px solid #e6e6e6;
-        border-radius: 20px;
-        position: relative;
-        padding: 20px 9px;
 
-        .item-img {
-            width: 40%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .item-info {
-            padding-left: 20px;
-            width: 60%;
-            height: 100%;
-
-
-            p {
-                color: #5e5e5e;
-                font-size: 20px;
-                margin: 0;
-
-                i {
-                    color: #00b706;
-                    font-size: 9px;
-                    margin-right: 7px;
-                    width: 15px;
-                    height: 15px;
-                    text-align: center;
-                    line-height: 15px;
-                    border-radius: 50%;
-                    border: 1px solid #00b706;
-                }
-            }
-
-            h4 {
-                font-weight: 700;
-                color: var(--color);
-
-                span {
-                    color: red;
-
-                }
-            }
-
-            h3 {
-                font-weight: bold;
-                color: var(--color);
-            }
-        }
-
-       
-
-        .button {
-            font-weight: 600;
-            border: none;
-            transition: all .3s ease;
-
-            &:hover {
-                background-color: #035f22;
-            }
-        }
-
-        .btn2 {
-            font-weight: 600;
-
-        }
-
-    }
 }
 
+.shop-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #e6e6e6;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px 9px;
+
+    .item-img {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .item-info {
+        padding-left: 20px;
+        width: 60%;
+        height: 100%;
+
+
+        p {
+            color: #5e5e5e;
+            font-size: 20px;
+            margin: 0;
+
+            i {
+                color: #00b706;
+                font-size: 9px;
+                margin-right: 7px;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                line-height: 15px;
+                border-radius: 50%;
+                border: 1px solid #00b706;
+            }
+        }
+
+        h4 {
+            font-weight: 700;
+            color: var(--color);
+
+            span {
+                color: red;
+
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+            color: var(--color);
+        }
+    }
+
+
+
+    .button {
+        font-weight: 600;
+        border: none;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: #035f22;
+        }
+    }
+
+    .btn2 {
+        font-weight: 600;
+
+    }
+
+}
 
 @media (min-width: 576px) {}
 

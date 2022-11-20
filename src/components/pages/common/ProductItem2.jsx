@@ -1,16 +1,11 @@
 import React from "react";
 import { useCart } from "react-use-cart";
 import { toast } from "react-toastify";
-import addWishList from "../../store/actions/AddWishList";
-import { useDispatch, useSelector } from "react-redux";
-const ProductItem2 = (product) => {
+import WishListIcon from "./WishListIcon";
+const ProductItem2 = ({product}) => {
   const { addItem } = useCart();
-
-  const dispatch = useDispatch();
-  const wishlist = useSelector((state) => state.wishlist);
   return (
     <>
-      <div className="col-lg-6 p-3">
         <div className="shop-item">
           <div className="item-img">
             <img src={product.img} alt="" />
@@ -32,7 +27,7 @@ const ProductItem2 = (product) => {
             <div className=" d-flex justify-content-start align-items-center">
               <button
                 onClick={() => {
-                  addItem(product.product);
+                  addItem(product);
                   toast.success("Product was added successfully");
                 }}
                 className="button btn btn-success m-1"
@@ -40,18 +35,9 @@ const ProductItem2 = (product) => {
                 Add to card <i class="fa-solid fa-basket-shopping"></i>
               </button>
 
-              <button
-                className="btn btn-primary btn2 m-1"
-                onClick={() => {
-                  addWishList(product, wishlist, dispatch);
-                  console.log("salam");
-                }}
-              >
-                add wish
-              </button>
+             <WishListIcon productItem={product}/>
             </div>
           </div>
-        </div>
       </div>
     </>
   );
