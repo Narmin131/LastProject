@@ -953,15 +953,10 @@ footer .footer-main .last h5 {
 }
 
 .homesec2 .carousel-main2 .carousel .box .box-content button {
-  position: absolute;
-  right: 20px;
-  bottom: 14px;
-  background: #4B6B0E;
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 30px;
   border: none;
   padding: 10px 17px;
   -webkit-transition: all .3s ease;
@@ -969,7 +964,7 @@ footer .footer-main .last h5 {
 }
 
 .homesec2 .carousel-main2 .carousel .box .box-content button:hover {
-  background-color: #62A403;
+  opacity: .8;
 }
 
 @-webkit-keyframes right {

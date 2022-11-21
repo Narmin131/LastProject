@@ -3,7 +3,7 @@ import { useCart } from "react-use-cart";
 import { toast } from "react-toastify";
 import WishListIcon from "./WishListIcon";
 const ProductItem2 = ({product}) => {
-  const { addItem } = useCart();
+  const { addItem, items } = useCart();
   return (
     <>
         <div className="shop-item">
@@ -31,8 +31,11 @@ const ProductItem2 = ({product}) => {
                   toast.success("Product was added successfully");
                 }}
                 className="button btn btn-success m-1"
+                disabled={items.find((a) => a.id === product.id)}
               >
-                Add to card <i class="fa-solid fa-basket-shopping"></i>
+                {
+              items.find((a) => a.id === product.id) ? ('Added to cart') : ('Add to cart')
+            } <i class="fa-solid fa-basket-shopping"></i>
               </button>
 
              <WishListIcon productItem={product}/>

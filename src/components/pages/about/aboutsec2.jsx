@@ -1,5 +1,6 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const aboutsec2 = () => {
   return (
     <div className="aboutsec2">

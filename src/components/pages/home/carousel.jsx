@@ -13,7 +13,7 @@ const carousel = () => {
         items: 5,
         navText: ["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
         smartSpeed: 1000,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 1100,
         loop: true,
         dots:false,
         responsive:{

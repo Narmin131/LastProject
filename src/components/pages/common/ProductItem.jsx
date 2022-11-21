@@ -3,8 +3,8 @@ import { useCart } from "react-use-cart";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 import WishListIcon from "./WishListIcon";
-const ProductItem = ({product}) => {
-  const { addItem } = useCart();
+const ProductItem = ({ product }) => {
+  const { addItem, items } = useCart();
   const { t } = useTranslation();
   return (
     <div className="box" key={product.id}>
@@ -16,18 +16,21 @@ const ProductItem = ({product}) => {
         <h4>{t(product.title)}</h4>
         <h6>{product.price}$</h6>
         <div className=" d-flex ">
-              <button
-                onClick={() => {
-                  addItem(product);
-                  toast.success("Product was added successfully");
-                }}
-                className="button btn btn-success m-1"
-              >
-                Add to card <i class="fa-solid fa-basket-shopping"></i>
-              </button>
+          <button
+            onClick={() => {
+              addItem(product);
+              toast.success("Product was added successfully");
+            }}
+            className="button btn btn-success m-1"
+            disabled={items.find((a) => a.id === product.id)}
+          >
+            {
+              items.find((a) => a.id === product.id) ? ('Added to cart') : ('Add to cart')
+            } <i class="fa-solid fa-basket-shopping"></i>
+          </button>
 
-             <WishListIcon productItem={product}/>
-            </div>
+          <WishListIcon productItem={product} />
+        </div>
       </div>
     </div>
   );

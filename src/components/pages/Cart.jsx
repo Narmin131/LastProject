@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "./common/Banner";
 import { useCart } from "react-use-cart";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Cart = () => {
   const { t } = useTranslation();
-  const {
-    isEmpty,
-    items,
-    removeItem,
-    updateItemQuantity,
-  } = useCart();
+  const { isEmpty, items, removeItem, updateItemQuantity } = useCart();
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <Banner title={t('cart.0')}  />
+      <Banner title={t("cart.0")} />
       {isEmpty ? (
         <div className="cart d-flex justify-content-center">
           <h3>Your cart is empty</h3>
@@ -25,7 +25,7 @@ const Cart = () => {
                 <div className="col-lg-12 ">
                   <table>
                     <thead>
-                      <tr>
+                      <tr data-aos="fade-right">
                         <th></th>
                         <th>
                           <h1>PHOTO</h1>
@@ -48,7 +48,7 @@ const Cart = () => {
                       {items.map((item, index) => {
                         return (
                           <>
-                            <tr key={item.id}>
+                            <tr key={item.id} data-aos="fade-left">
                               <td>
                                 <i
                                   class="fa-solid fa-xmark"
@@ -56,7 +56,7 @@ const Cart = () => {
                                 ></i>
                               </td>
                               <td>
-                                <img src={item.img} alt='' />
+                                <img src={item.img} alt="" />
                               </td>
                               <td>
                                 <p>{item.title}</p>

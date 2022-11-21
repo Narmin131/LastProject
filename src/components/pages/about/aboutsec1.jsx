@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import img from "../../assets/img/about1.png";
-
-const aboutsec1 = () => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+const Aboutsec1 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="aboutsec1">
+    <div className="aboutsec1" >
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -11,7 +15,7 @@ const aboutsec1 = () => {
               <img src={img} alt=''/>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-up">
             <div className="right2">
               <p>ONLY ORGANIC</p>
               <h2>The Best Choice For</h2>
@@ -40,4 +44,4 @@ const aboutsec1 = () => {
   );
 };
 
-export default aboutsec1;
+export default Aboutsec1;
