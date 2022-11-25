@@ -5,7 +5,6 @@ import Footer from "../pages/common/Footer";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Register from "../pages/Register";
 import Cart from "../pages/Cart";
 import Login from "../pages/Signin";
 import Blogs from "../pages/Blogs";
@@ -38,10 +37,6 @@ const AppRouter = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route
-            path="/register"
-            element={<Register user={user} setUser={setUser} />}
-          ></Route>
           <Route
             path="/login"
             element={<Login user={user} setUser={setUser} />}

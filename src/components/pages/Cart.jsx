@@ -15,7 +15,7 @@ const Cart = () => {
       <Banner title={t("cart.0")} />
       {isEmpty ? (
         <div className="cart d-flex justify-content-center">
-          <h3>Your cart is empty</h3>
+          <h3  style={{fontWeight:'bold'}}>Your cart is empty</h3>
         </div>
       ) : (
         <div className="cart">

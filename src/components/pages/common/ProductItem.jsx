@@ -15,7 +15,7 @@ const ProductItem = ({ product }) => {
       <div className="box-content">
         <h4>{t(product.title)}</h4>
         <h6>{product.price}$</h6>
-        <div className=" d-flex ">
+        <div className="d-flex">
           <button
             onClick={() => {
               addItem(product);

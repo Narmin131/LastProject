@@ -2,20 +2,51 @@ import React from "react";
 import Banner from "./common/Banner";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-const Signin = ({user, setUser}) => {
+import { useState } from "react";
+import { toast } from "react-toastify";
+const Signin = ({ user, setUser }) => {
   const { t } = useTranslation();
 
-  const history = useNavigate();
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoggedin, setIsLoggedin] = useState(false);
 
-  const submitRegister = (e) => {
+  const login = (e) => {
     e.preventDefault();
-    console.log(user);
-    history("/register");
+    setIsLoggedin(true);
+    const userData = {
+      name,
+      password,
+    };
+
+    localStorage.setItem("token-info", JSON.stringify(userData));
+    console.log(name, password, isLoggedin);
   };
 
-  const handleChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+  
+  const logOut = () => {
+    localStorage.removeItem("token-info");
+    setIsLoggedin(false);
   };
+
+  // const submitRegister = (e) => {
+  //   e.preventDefault();
+  //   if (admin) {
+  //     console.log(admin);
+  //     console.log(user);
+
+  //     localStorage.setItem("token-info", JSON.stringify(admin));
+  //   } else {
+  //     toast.error("Username or password is incorrect");
+  //     console.log(admin);
+  //     console.log(user);
+  //   }
+  // };
+
+  // const logOut = () => {
+  //   localStorage.removeItem("token-info");
+  //   history("/login");
+  // };
 
   return (
     <>
@@ -25,30 +56,33 @@ const Signin = ({user, setUser}) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <form className="form" onSubmit={submitRegister}>
-                  <h2>Login to our site</h2>
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    name="username"
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="password"
-                    placeholder="Your password"
-                    name="password"
-                    onChange={handleChange}
-                  />
-                  <div className="bottom">
-                    <button>Sign In</button>
-                    {/* <p>
-                      Doesn't have an account?
-                      <NavLink to="/register">
-                        Sign Up
-                      </NavLink>
-                    </p> */}
+                {!isLoggedin ? (
+                  <form className="form" >
+                    <h2>Login to our site</h2>
+                    <input
+                      type="text"
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
+                      placeholder="Name"
+                    />
+                    <input
+                      type="password"
+                      onChange={(e) => setPassword(e.target.value)}
+                      value={password}
+                      placeholder="Password"
+                    />
+                    <div className="bottom">
+                      <button type="submit" onClick={login}>Sign In</button>
+                    </div>
+                  </form>
+                ) : (
+                  <div className="d-flex align-items-center flex-column">
+                    <h2>Welcome <i>{name}</i></h2>
+                    <button onClick={logOut} className="btn btn-danger">
+                      Log Out
+                    </button>
                   </div>
-                </form>
+                )}
               </div>
             </div>
           </div>

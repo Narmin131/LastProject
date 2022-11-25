@@ -32,8 +32,8 @@ const WishList = () => {
           </div>
         </div>
       ) : (
-        <div className="cart d-flex justify-content-center">
-          <h3>Your wishlist is empty</h3>
+        <div className="cart d-flex justify-content-center align-items-center flex-column">
+          <h3 style={{fontWeight:'bold'}}>Your wishlist is empty</h3> <i className="fa-solid fa-heart"></i>
         </div>
       )}
     </>
