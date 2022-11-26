@@ -15,7 +15,7 @@ const data = [
   {
     id: 1,
     img: img1,
-    title: "Vegan Fresh Tomato",
+    title: "Fresh Tomato",
     price: 87,
   },
   {
@@ -51,7 +51,7 @@ const data = [
   {
     id: 7,
     img: img7,
-    title: "Fresh Vegetable",
+    title: "Fresh Vegetable Box",
     price: 87,
   },
   {
@@ -69,20 +69,20 @@ const data = [
   {
     id: 10,
     img: img10,
-    title: "Calabres Broccoli",
-    price: 123,
+    title: "Calabres Carrot",
+    price: 96,
   },
   {
     id: 11,
     img: img11,
-    title: "Vegan Fresh Maltas",
-    price: 135,
+    title: "Fresh Green Tea",
+    price: 70,
   },
   {
     id: 12,
     img: img12,
-    title: "Organic Banana",
-    price: 52,
+    title: "Fresh Pepper",
+    price: 63,
   },
 ];
 
