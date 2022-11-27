@@ -6,7 +6,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const Cart = () => {
   const { t } = useTranslation();
-  const { isEmpty, items, removeItem, updateItemQuantity } = useCart();
+  const { isEmpty, items, removeItem, updateItemQuantity, cartTotal } =
+    useCart();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -15,7 +16,7 @@ const Cart = () => {
       <Banner title={t("cart.0")} />
       {isEmpty ? (
         <div className="cart d-flex justify-content-center">
-          <h3  style={{fontWeight:'bold'}}>Your cart is empty</h3>
+          <h3 style={{ fontWeight: "bold" }}>Your cart is empty</h3>
         </div>
       ) : (
         <div className="cart">
@@ -98,6 +99,12 @@ const Cart = () => {
                       })}
                     </tbody>
                   </table>
+                </div>
+                <div className="col-lg-12">
+                  <div className="total d-flex justify-content-between" style={{ padding: ' 20px 70px ' , fontWeight:'bold'}}>
+                    <h3 style={{fontWeight:'bold', padding:"0", margin:'0'}}>Subtotal : {cartTotal}$</h3>
+                    <button className="btn btn-success" style={{fontWeight:'bold'}}>Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
