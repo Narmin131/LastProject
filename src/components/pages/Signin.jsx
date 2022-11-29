@@ -29,25 +29,6 @@ const Signin = ({ user, setUser }) => {
     setIsLoggedin(false);
   };
 
-  // const submitRegister = (e) => {
-  //   e.preventDefault();
-  //   if (admin) {
-  //     console.log(admin);
-  //     console.log(user);
-
-  //     localStorage.setItem("token-info", JSON.stringify(admin));
-  //   } else {
-  //     toast.error("Username or password is incorrect");
-  //     console.log(admin);
-  //     console.log(user);
-  //   }
-  // };
-
-  // const logOut = () => {
-  //   localStorage.removeItem("token-info");
-  //   history("/login");
-  // };
-
   return (
     <>
       <Banner title={t("register.0")} />
