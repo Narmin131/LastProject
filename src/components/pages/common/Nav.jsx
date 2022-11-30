@@ -4,12 +4,41 @@ import Theme from "./Theme";
 import Lang from "./Lang";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 const Nav = () => {
   const { items } = useCart();
   const wishlist = useSelector((state) => state.wishlist);
   const { t } = useTranslation();
+const history= useNavigate()
+  const handleLogoutClick = () => {
+    localStorage.clear();
+    console.log('salam');
+    history('/login')
+  };
+
+  const getEmail = localStorage.getItem("emailData");
+  const getPassword = localStorage.getItem("passwordData");
+  const authButton = () => {
+    if (getEmail === null ) {
+      return (
+        <>
+          <NavLink to="/login">
+            <button > <i class="fa-solid fa-user"> </i>Login</button>
+          </NavLink>
+        </>
+      );
+    } else {
+      return (
+        <button  onClick={handleLogoutClick}>
+          <i class="fa-solid fa-user"></i> Logout {getEmail}
+        </button>
+      );
+    }
+  };
+
+  console.log(getEmail);
   return (
     <>
       <nav>
@@ -35,9 +64,7 @@ const Nav = () => {
 
             <div className="col-lg-3 pt-4 pb-4 px-0">
               <div className="login">
-                <NavLink to="/login">
-                  <i class="fa-solid fa-user"></i>
-                </NavLink>
+                {authButton()}
                 <div className="wishlistLength">
                   <span>{wishlist.length}</span>
                   <NavLink to="/wishlist">
@@ -50,8 +77,8 @@ const Nav = () => {
                     <i class="fa-solid fa-basket-shopping"></i>
                   </NavLink>
                 </div>
-                <NavLink to='/search'>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <NavLink to="/search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </NavLink>
               </div>
             </div>

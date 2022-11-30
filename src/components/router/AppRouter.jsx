@@ -22,6 +22,7 @@ const AppRouter = () => {
     password: "narmin123",
   });
 
+
   const wishlist = useSelector((state) => state.wishlist);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <CartProvider>
         <ToastContainer pauseOnHover={false} autoClose={1000} />
-        <Nav />
+        <Nav/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>

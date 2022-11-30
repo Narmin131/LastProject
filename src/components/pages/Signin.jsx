@@ -2,68 +2,72 @@ import React from "react";
 import Banner from "./common/Banner";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { toast } from "react-toastify";
 const Signin = ({ user, setUser }) => {
   const { t } = useTranslation();
 
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLoggedin, setIsLoggedin] = useState(false);
+  // const [name, setName] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [isLoggedin, setIsLoggedin] = useState(false);
 
-  const login = (e) => {
+  // const login = (e) => {
+  //   e.preventDefault();
+  //   setIsLoggedin(true);
+  //   const userData = {
+  //     name,
+  //     password,
+  //   };
+
+  //   localStorage.setItem("token-info", JSON.stringify(userData));
+  //   console.log(name, password, isLoggedin);
+  // };
+
+  // const logOut = () => {
+  //   localStorage.removeItem("token-info");
+  //   setIsLoggedin(false);
+  // };
+
+  const history = useNavigate();
+  const name = useRef();
+  const password = useRef();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setIsLoggedin(true);
-    const userData = {
-      name,
-      password,
-    };
-
-    localStorage.setItem("token-info", JSON.stringify(userData));
-    console.log(name, password, isLoggedin);
+    if (
+      name.current.value === "Narmin" &&
+      password.current.value === "narmin123"
+    ) {
+      localStorage.setItem("emailData", "Narmin");
+      localStorage.setItem("passwordData", "narmin123");
+      history("/");
+      window.location.reload();
+    }
+    else{
+      toast.warning('Please fill all the places')
+    }
   };
-
-  
-  const logOut = () => {
-    localStorage.removeItem("token-info");
-    setIsLoggedin(false);
-  };
-
   return (
     <>
       <Banner title={t("register.0")} />
+
       <div className="register">
         <div className="register-main">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                {!isLoggedin ? (
-                  <form className="form" >
-                    <h2>Login to our site</h2>
-                    <input
-                      type="text"
-                      onChange={(e) => setName(e.target.value)}
-                      value={name}
-                      placeholder="Name"
-                    />
-                    <input
-                      type="password"
-                      onChange={(e) => setPassword(e.target.value)}
-                      value={password}
-                      placeholder="Password"
-                    />
-                    <div className="bottom">
-                      <button type="submit" onClick={login}>Sign In</button>
-                    </div>
-                  </form>
-                ) : (
-                  <div className="d-flex align-items-center flex-column">
-                    <h2>Welcome <i>{name}</i></h2>
-                    <button onClick={logOut} className="btn btn-danger">
-                      Log Out
-                    </button>
+                <form className="form" onSubmit={handleSubmit}>
+                  <h2>Login to our site</h2>
+                  <input type="text" ref={name} placeholder="Name" />
+                  <input
+                    type="password"
+                    ref={password}
+                    placeholder="Password"
+                  />
+                  <div className="bottom">
+                    <button type="submit">Login</button>
                   </div>
-                )}
+                </form>
               </div>
             </div>
           </div>
