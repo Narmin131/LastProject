@@ -11,29 +11,42 @@ const Nav = () => {
   const { items } = useCart();
   const wishlist = useSelector((state) => state.wishlist);
   const { t } = useTranslation();
-const history= useNavigate()
+  const history = useNavigate();
   const handleLogoutClick = () => {
     localStorage.clear();
-    console.log('salam');
-    history('/login')
+    console.log("salam");
+    history("/login");
   };
 
   const getEmail = localStorage.getItem("emailData");
   const getPassword = localStorage.getItem("passwordData");
   const authButton = () => {
-    if (getEmail === null ) {
+    if (getEmail === null) {
       return (
         <>
           <NavLink to="/login">
-            <button > <i class="fa-solid fa-user"> </i>Login</button>
+            <i class="fa-solid fa-user"> </i>
           </NavLink>
         </>
       );
     } else {
       return (
-        <button  onClick={handleLogoutClick}>
-          <i class="fa-solid fa-user"></i> Logout {getEmail}
-        </button>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {getEmail}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" onClick={handleLogoutClick}>
+              Logout
+            </a>
+          </div>
+        </div>
       );
     }
   };
