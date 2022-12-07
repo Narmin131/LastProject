@@ -57,12 +57,12 @@ const Nav = () => {
       <nav>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 p-1 ">
+            <div className="col-lg-6 col-md-6 col-12 p-1 ">
               <div className="left">
                 <p>{t("nav.0")}</p>
               </div>
             </div>
-            <div className="col-lg-6 p-1">
+            <div className="col-lg-6 col-md-6 col-12 p-1">
               <div className="icons">
                 <Lang />
                 <Theme />
@@ -103,7 +103,7 @@ const Nav = () => {
         <div className="header-main">
           <div className="container-fluid  h-100">
             <div className="row h-100">
-              <div className="col-lg-3 p-0 h-100">
+              <div className="col-lg-3 col-12 p-0 h-100">
                 <div className="category">
                   <h2>
                     <i class="fa-solid fa-bars"></i>
@@ -111,7 +111,7 @@ const Nav = () => {
                   </h2>
                 </div>
               </div>
-              <div className="col-lg-6 h-100">
+              <div className="col-lg-6 col-12 h-100">
                 <ul className="links">
                   <li>
                     <NavLink to="/">{t("nav.4")}</NavLink>
@@ -130,7 +130,7 @@ const Nav = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3 col-12">
                 <div className="contact">
                   <div className="txt">
                     <h4>+90 157 058 4567</h4>

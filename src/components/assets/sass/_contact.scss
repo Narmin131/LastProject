@@ -93,10 +93,21 @@
 }
 
 
-@media (min-width: 576px) {}
+@media (max-width: 576px) {
+    .contact-main{
+        padding: 90px  10px !important;
+        img{
+            width: 200px !important;
+        }
+    }
+    .text-area{
+        padding: 20px 0 !important;
+    }
 
-@media (min-width: 768px) {}
+}
 
-@media (min-width: 992px) {}
+@media (max-width: 768px) {}
 
-@media (min-width: 1200px) {}
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}

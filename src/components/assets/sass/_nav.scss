@@ -249,31 +249,125 @@ header {
     padding: 1px 0;
 }
 
-.wishlistLength{
+.wishlistLength {
     position: relative;
-    span{
-       position:absolute;
-       top: -12px;
-       right: -10px;
-       width: 10px;
-       height: 10px;
-       background-color: #218716;
-       color: #fff;
-       padding:12px;
-       font-weight: 500;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-       border-radius: 25px;
+
+    span {
+        position: absolute;
+        top: -12px;
+        right: -10px;
+        width: 10px;
+        height: 10px;
+        background-color: #218716;
+        color: #fff;
+        padding: 12px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 25px;
     }
 }
 
 
-@media (min-width: 576px) {}
+@media (max-width: 576px) {
+    nav {
+        .left {
+            justify-content: center !important;
+            align-items: center !important;
+        }
 
-@media (min-width: 768px) {}
+        .icons {
+            justify-content: center !important;
+        }
 
-@media (min-width: 992px) {}
+        .logo {
+            justify-content: center !important;
+        }
 
-@media (min-width: 1200px) {}
+        .login {
+            padding: 0 90px;
+        }
+    }
+
+    header {
+        height: auto !important;
+
+        .category {
+            padding: 30px 0 !important;
+        }
+
+        .links {
+            padding: 30px 0 !important;
+        }
+
+        .contact {
+            display: none !important;
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden !important;
+    }
+
+    nav {
+        .left {
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .icons {
+            justify-content: center !important;
+        }
+
+        .logo {
+            justify-content: center !important;
+        }
+
+        .login {
+            padding: 0 90px;
+        }
+    }
+
+    header {
+        height: auto !important;
+
+        .category {
+            padding: 30px 0 !important;
+        }
+
+        .links {
+            padding: 30px 0 !important;
+        }
+
+        .contact {
+            display: none !important;
+
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        height: auto !important;
+
+        .category {
+            padding: 30px 0 !important;
+        }
+
+        .links {
+            padding: 30px 0 !important;
+        }
+
+        .contact {
+            display: none !important;
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {}

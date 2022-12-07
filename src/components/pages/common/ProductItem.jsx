@@ -15,7 +15,6 @@ const ProductItem = ({ product }) => {
       <div className="box-content">
         <h4>{t(product.title)}</h4>
         <h6>{product.price}$</h6>
-        <div className="d-flex">
           <button
             onClick={() => {
               addItem(product);
@@ -24,13 +23,12 @@ const ProductItem = ({ product }) => {
             className="button btn btn-success m-1"
             disabled={items.find((a) => a.id === product.id)}
           >
-            {
-              items.find((a) => a.id === product.id) ? ('Added to cart') : ('Add to cart')
-            } <i class="fa-solid fa-basket-shopping"></i>
+            {items.find((a) => a.id === product.id)
+              ? "Added to cart"
+              : "Add to cart"}{" "}
+            <i class="fa-solid fa-basket-shopping"></i>
           </button>
-
-          <WishListIcon productItem={product} />
-        </div>
+        <WishListIcon productItem={product} />
       </div>
     </div>
   );

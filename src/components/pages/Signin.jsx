@@ -58,11 +58,11 @@ const Signin = ({ user, setUser }) => {
               <div className="col-lg-12">
                 <form className="form" onSubmit={handleSubmit}>
                   <h2>Login to our site</h2>
-                  <input type="text" ref={name} placeholder="Name" />
+                  <input type="text" ref={name} placeholder="Your Username" />
                   <input
                     type="password"
                     ref={password}
-                    placeholder="Password"
+                    placeholder="Your Password"
                   />
                   <div className="bottom">
                     <button type="submit">Login</button>

@@ -330,6 +330,96 @@ header .header-main .contact .txt h6 {
   border-radius: 25px;
 }
 
+@media (max-width: 576px) {
+  nav .left {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  nav .icons {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  nav .logo {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  nav .login {
+    padding: 0 90px;
+  }
+  header {
+    height: auto !important;
+  }
+  header .category {
+    padding: 30px 0 !important;
+  }
+  header .links {
+    padding: 30px 0 !important;
+  }
+  header .contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden !important;
+  }
+  nav .left {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  nav .icons {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  nav .logo {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  nav .login {
+    padding: 0 90px;
+  }
+  header {
+    height: auto !important;
+  }
+  header .category {
+    padding: 30px 0 !important;
+  }
+  header .links {
+    padding: 30px 0 !important;
+  }
+  header .contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    height: auto !important;
+  }
+  header .category {
+    padding: 30px 0 !important;
+  }
+  header .links {
+    padding: 30px 0 !important;
+  }
+  header .contact {
+    display: none !important;
+  }
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -534,6 +624,24 @@ footer .footer-main .last h5 {
 .bx {
   border-right: 1px solid #FFFFFF0D;
   border-left: 1px solid #FFFFFF0D;
+}
+
+@media (max-width: 576px) {
+  .last {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .last h5 {
+    padding-bottom: 20px !important;
+  }
+  .img img {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    width: 70% !important;
+  }
 }
 
 .slider {
@@ -896,7 +1004,6 @@ footer .footer-main .last h5 {
   border: 1px solid var(--color);
   border-radius: 20px;
   overflow: hidden;
-  padding-bottom: 10px;
 }
 
 .homesec2 .carousel-main2 .carousel .box .box-img {
@@ -953,7 +1060,11 @@ footer .footer-main .last h5 {
   font-size: 25px;
 }
 
-.homesec2 .carousel-main2 .carousel .box .box-content button {
+.homesec2 .carousel-main2 .carousel .box .box-content .button {
+  position: absolute;
+  right: 20px;
+  bottom: 14px;
+  background: #4B6B0E;
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
@@ -965,7 +1076,7 @@ footer .footer-main .last h5 {
   transition: all .3s ease;
 }
 
-.homesec2 .carousel-main2 .carousel .box .box-content button:hover {
+.homesec2 .carousel-main2 .carousel .box .box-content .button:hover {
   background-color: #62A403;
 }
 
@@ -1026,6 +1137,18 @@ footer .footer-main .last h5 {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .homesec1 {
+    height: auto !important;
+  }
+  html {
+    overflow-x: hidden !important;
+  }
+  .button2 {
+    display: none !important;
   }
 }
 
@@ -1252,6 +1375,23 @@ footer .footer-main .last h5 {
   }
 }
 
+@media (max-width: 576px) {
+  .email-bg {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 10px  0 !important;
+  }
+  .email-bg .txt-left p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .email-bg .txt-left h1 {
+    font-size: 23px !important;
+  }
+}
+
 .contactsec1 {
   width: 100%;
   height: auto;
@@ -1358,6 +1498,18 @@ footer .footer-main .last h5 {
   color: #fff;
   font-weight: 800;
   line-height: 69px;
+}
+
+@media (max-width: 576px) {
+  .contact-main {
+    padding: 90px  10px !important;
+  }
+  .contact-main img {
+    width: 200px !important;
+  }
+  .text-area {
+    padding: 20px 0 !important;
+  }
 }
 
 .register {

@@ -7,7 +7,7 @@ const WishListIcon = ({ productItem }) => {
   const dispatch = useDispatch();
 
   return (
-    <button className="btn btn-primary" onClick={() => addWishList(productItem, wishlist, dispatch)}>
+    <button className="btn btn-primary button2" onClick={() => addWishList(productItem, wishlist, dispatch)}>
      
       {wishlist.find((selectedProduct) => selectedProduct.id === productItem.id) ? (
          <i className="fa-solid fa-heart"></i>

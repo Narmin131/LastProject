@@ -139,10 +139,23 @@ footer{
 }
 
 
-@media (min-width: 576px) {}
+@media (max-width: 576px) {
+    .last{
+        flex-direction: column !important;
+        h5{
+            padding-bottom: 20px !important;
+        }
+    }
+    .img{
+        img{
+            align-items: center !important;
+            width: 70% !important;
+        }
+    }
+}
 
-@media (min-width: 768px) {}
+@media (max-width: 768px) {}
 
-@media (min-width: 992px) {}
+@media (max-width: 992px) {}
 
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {}

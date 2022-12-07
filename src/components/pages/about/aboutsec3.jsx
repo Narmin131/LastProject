@@ -6,10 +6,13 @@ const Aboutsec3 = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="aboutsec3" >
-      <div className="about-main" data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
+    <div className="aboutsec3">
+      <div
+        className="about-main"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="container h-100">
           <div className="row h-100">
             <div className="col-lg-12 h-100">
