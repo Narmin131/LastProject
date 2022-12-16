@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "../pages/common/Nav";
 import Footer from "../pages/common/Footer";
@@ -17,11 +17,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 import { useSelector } from "react-redux";
 
 const AppRouter = () => {
-  const [user, setUser] = useState({
-    username: "Narmin",
-    password: "narmin123",
-  });
-
+ 
 
   const wishlist = useSelector((state) => state.wishlist);
 
@@ -40,7 +36,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contact />}></Route>
           <Route
             path="/login"
-            element={<Login user={user} setUser={setUser} />}
+            element={<Login />}
           ></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
