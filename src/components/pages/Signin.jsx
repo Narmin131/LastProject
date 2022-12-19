@@ -2,32 +2,10 @@ import React from "react";
 import Banner from "./common/Banner";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { useState, useRef } from "react";
+import {  useRef } from "react";
 import { toast } from "react-toastify";
 const Signin = ({ user, setUser }) => {
   const { t } = useTranslation();
-
-  // const [name, setName] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [isLoggedin, setIsLoggedin] = useState(false);
-
-  // const login = (e) => {
-  //   e.preventDefault();
-  //   setIsLoggedin(true);
-  //   const userData = {
-  //     name,
-  //     password,
-  //   };
-
-  //   localStorage.setItem("token-info", JSON.stringify(userData));
-  //   console.log(name, password, isLoggedin);
-  // };
-
-  // const logOut = () => {
-  //   localStorage.removeItem("token-info");
-  //   setIsLoggedin(false);
-  // };
-
   const history = useNavigate();
   const name = useRef();
   const password = useRef();
